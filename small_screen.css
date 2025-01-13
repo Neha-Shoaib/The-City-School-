@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+nav{
+    margin-left: 3%;
+    padding: 10px;
+    height: 20px;
+border-top: 1px solid rgba(255, 255, 255, 0.683);
+border-bottom: 1px solid rgba(255, 255, 255, 0.694);
+width:80%;
+}
+nav>a{
+    color: white;
+    font-weight: bold;
+}
+nav>select{
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;    
+}
+nav>a:hover{
+    color: lightgray;
+}
+nav>select:hover{
+    color: black;
+}
+header>img{
+    margin-right: 3%;
+    vertical-align:middle;
+width: 120px;
+}
+header{
+    margin-top: 3%;
+    display: flex;
+}
+nav>a,select{
+    margin: 1%;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    text-transform: uppercase;
+ }
+ .background-video{
+    z-index: 1;
+    position: relative;
+ }
+ .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire area */
+    z-index: -1;
+ }
+ .content {
+    z-index: 1; 
+    color: rgb(255, 255, 255); 
+    width: 80%;
+margin-left: 5%;
+margin-top: 50%;
+letter-spacing: 1px;}
+.firstline{
+    font-size:18px;
+font-weight: 100;}
+.secondline{
+    font-size: 40px;
+}
+.content>p{
+    margin: 0;
+}
+/* .explore{
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin-top: 90%;
+    border: none;
+    position: relative;
+    
+} */
+ .about_container{
+    text-align: center;
+    line-height: 30px;
+    font-size: medium;
+    padding-top: 30px;
+margin: 60% 0% 2% 5%;
+display: block;
+ }
+ .about_container>video{
+  width: 85%;
+  display: block;
+  margin: 5% 0 2% 4%;
+ }
+ .about{
+    width: 80%;
+    letter-spacing: 1px;
+    font-stretch:extra-expanded;
+
+ }
+ .about>h2{
+    color: rgb(11, 11, 128);
+    font-size: xx-large;
+ }
+ .about>input{
+    border: 1px solid rgb(11,11,128);
+    color: rgb(11, 11, 128);
+    padding:10px;
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+ .about>input:hover{
+    color: white;
+    background-color:rgb(11, 11, 128) ;
+ }
+.Register_Campus_Payonline{
+    display: block;
+    margin:2% 0 2% 3%;
+
+}
+.register,.pay,.campus{
+    width: 90%;
+    border: 1px solid lightgray;
+    text-align: center;
+    height: 40%;
+    margin: 3% 0 5% 3%;
+}
+.register>img,.pay>img,.campus>img{
+    width: 330px;
+    padding: 0;
+}
+.register>a,.pay>a,.campus>a{
+   margin: 0;
+   color: rgb(11, 11, 128);
+text-decoration: none;
+padding-bottom:50px;
+font-size:medium;
+font-weight: bold;
+}
+.register>h2,.pay>h2,.campus>h2{
+    padding: 20px 0 0 0 ;
+    margin: 0;
+    color: rgb(11, 11, 128);
+}
+.educational_technology>a>ul{
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 40px;
+    list-style: none;
+    margin: 0 0 0 3%;
+    width: 93%;
+    gap: 240px;
+
+}
+.educational_technology_image{
+    margin-left: 3%;
+    height: 65%;
+    width: 100%;
+    padding: 0;
+}
+.educational_technology>a>p{
+    position: absolute;
+    top:25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    color: white; /* Text color for visibility */
+    font-family: 'Georgia', serif; /* Apply a specific font */
+    font-size: 30px; /* Adjust size */
+    font-weight: bold; /* Optional: Make text bold */
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 10px; /* Optional: Add padding around text */
+}
+
+
+.educational_technology{
+    position: relative;
+    display: inline-block;
+    width: 94%;
+    height: 70%;
+    margin-bottom: 5%;
+}
+.alumni{
+    margin-bottom: 2%;
+}
+.banner{
+    width: 94%;
+    margin: 0 0 2% 3%;
+}
+.network{
+    margin:0 0 2% 4%;
+}
+.network>h2{
+    text-align: center;
+    color: rgb(11, 11, 128);
+font-size: 30px;
+
+}
+.network>ul{
+    display: flex;
+    width: 50%;
+    gap: 20px;
+    list-style: none;
+}
+.network>ul>li>a>img{
+    width: 200px;
+}
+.media_links>ul>li>a>img{
+    width: 20px;
+}
+.media_links>ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.media_links>ul>li{
+    background-color: white;
+    height: 20px;
+    border-radius: 4px;
+}
+.parentfooter{
+    display: flex;
+    background-color: rgb(33, 33, 112);
+    padding: 30px;
+    gap: 20px;
+    /* height: 50%; */
+}
+.logo>img{
+    width: 180px;
+    padding: 20px;
+}
+.footer,.location,.media_links{
+    line-height: 20px;
+    color: white;
+}
+.affilations{
+    margin-left: 12%;
+    color: white;
+    border-left: 1px solid white;
+    padding-left: 30px;
+    height: 20%;
+}
+.affilations>ul>li>img{
+    width: 180px;
+    padding: 10px;
+}
+.affilations>ul{
+    display: flex;
+    list-style: none;
+}
+.location>input{
+    background-color: rgb(33, 33, 112) ;
+    color: white;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+.location>input:hover{
+color: rgb(33, 33, 112);
+background-color: white;
+}
+.media_links>p,.affilations>p{
+padding-left: 40px;
+color: lightgray;
+font-size: small;
+}
+.privacychild{
+    display: flex;
+    background-color: rgb(33, 33, 112);
+   padding: 0;
+}
+.privacychild>p,.privacychild>a{
+margin-left: 2%;
+color: white;
+text-decoration: none;
+font-size: smaller;
+margin-top: 2%;}
+.privacychild>a:hover{
+color: rgb(128, 124, 124);
+}
+
+.privacy{
+    margin-left: 20%;
+    background-color: rgb(33, 33, 112);
+
+}
+.parentprivacy{
+    background-color: rgb(33, 33, 112);
+}
+.back_to_top{
+    position: fixed;
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    background-color: rgb(33, 33, 112);
+    color: white; /* Text color */
+    border: 2px solid rgb(33, 33, 112) ; /* Border color */
+    padding: 20px 20px; /* Padding around text */
+    font-size: 16px;
+    cursor: pointer;
+}

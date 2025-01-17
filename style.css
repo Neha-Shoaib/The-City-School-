@@ -303,7 +303,7 @@ color: rgb(128, 124, 124);
     object-position: center;
 }
 
-@media screen and (min-width:320px) and (max-width:456px){
+@media screen and (min-width:320px) and (max-width:640px){
     nav{padding:10px; width:100%;position: sticky;top:5 0;height: 70px; justify-content: space-between;flex-wrap: wrap;}
 header>img{margin-left: 16%;width:50%;margin-bottom: 2%;}
 header{margin-top: 3%;display: block;}
@@ -311,7 +311,7 @@ header{margin-top: 3%;display: block;}
 .firstline{font-size:20px;font-weight: 100;}
 .secondline{font-size: 40px;}
 .content>p{margin: 0;}
- .about_container{flex-direction: column;margin: 35% 5% 10% 5%;}
+ .about_container{flex-direction: column;margin: 100% 5% 10% 5%;}
  .about{order: 1;width: 90%;letter-spacing: 1px;font-stretch:extra-expanded;}
  .about_container>video{order: 2;width: 100%;margin-top: 5%; margin-right: 10%;}
  .Register_Campus_Payonline{display: block;margin:10% 3% 10% 3%;}
@@ -327,7 +327,7 @@ header{margin-top: 3%;display: block;}
 .alumni{width: 390px;height: 300px;margin-bottom: 5%;margin-top: 10%;}
 .map{height: 24%;}
 .networkhidden{visibility: hidden;}
-.parentfooter{display: block;background-color: rgb(33, 33, 112);padding: 10px;height: 80%;width: 95%;}
+.parentfooter{display: block;background-color: rgb(33, 33, 112);padding: 10px;height: 150%;width: 95%;}
 .logo>img{width: 180px;padding: 20px;}
 .footer,.location,.media_links p{line-height: 20px;color: white;}
 .affilations{color: rgb(10, 7, 7);border-top: 1px solid white;height: 20%;border-left: none;margin-left: -20%;}
@@ -336,5 +336,5 @@ header{margin-top: 3%;display: block;}
 .location p{width: 70%;line-height: 30px;}
 .media_links ul{margin-left: -9%;}
 .privacy{margin-left:-1%; }
-.privacychild>p,.privacychild>a{font-size: x-small;padding-top: 50px;}
+.privacychild>p,.privacychild>a{font-size: x-small;padding-top: 25px;}
 .parentprivacy{height:10%;margin-top: -1%;width: 100%;}}

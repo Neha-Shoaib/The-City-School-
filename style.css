@@ -1,7 +1,7 @@
 .about_container>video{
     width:50%;
+    flex: 1;
  }
-
 body{
     margin: 0;
     /* overflow: hidden; */
@@ -57,7 +57,7 @@ nav>a,select{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures video covers the entire area */
+    object-fit: cover; 
     z-index: -1;
  }
  .content {
@@ -75,18 +75,10 @@ font-weight: 100;}
 }
 .content>p{
     margin: 0;
-}
-/* .explore{
-    z-index: 1;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    margin-top: 90%;
-    border: none;
-    position: relative;
-    
-} */
+  }
  .about_container{
     display: flex;
+    flex-direction: row;
     text-align: center;
     line-height: 30px;
     font-size: medium;
@@ -94,6 +86,7 @@ font-weight: 100;}
 margin: 10% 0% 3% 3%;
  }
  .about{
+    flex: 1;
     width: 40%;
     margin-left: 5%;
     letter-spacing: 1px;
@@ -151,7 +144,7 @@ font-weight: bold;
     list-style: none;
     margin: 0 0 0 3%;
     width: 93%;
-    gap: 240px;
+    gap: 200px;
 
 }
 .educational_technology_image{
@@ -162,15 +155,15 @@ font-weight: bold;
 }
 .educational_technology>a>p{
     position: absolute;
-    top:25%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    color: white; /* Text color for visibility */
-    font-family: 'Georgia', serif; /* Apply a specific font */
-    font-size: 30px; /* Adjust size */
-    font-weight: bold; /* Optional: Make text bold */
+    top:25%; 
+    left: 50%; 
+    color: white; 
+    font-family: 'Georgia', serif; 
+    font-size: 30px; 
+    font-weight: bold;
     text-align: center;
     transform: translate(-50%,-50%);
-    padding: 10px; /* Optional: Add padding around text */
+    padding: 10px;
 }
 
 
@@ -278,7 +271,6 @@ margin-top: 2%;}
 .privacychild>a:hover{
 color: rgb(128, 124, 124);
 }
-
 .privacy{
     margin-left: 20%;
     background-color: rgb(33, 33, 112);
@@ -289,12 +281,60 @@ color: rgb(128, 124, 124);
 }
 .back_to_top{
     position: fixed;
-    bottom: 20px; /* Distance from bottom */
-    right: 20px; /* Distance from right */
+    bottom: 20px; 
+    right: 20px; 
     background-color: rgb(33, 33, 112);
-    color: white; /* Text color */
-    border: 2px solid rgb(33, 33, 112) ; /* Border color */
-    padding: 20px 20px; /* Padding around text */
+    color: white; 
+    border: 2px solid rgb(33, 33, 112) ;
+    padding: 20px 20px; 
     font-size: 16px;
     cursor: pointer;
 }
+.alumni{
+    width: 100%; /* Container takes full width */
+    height: auto; /* Fixed height for the image container */
+    overflow: hidden; /* Ensures the image stays within the bounds */
+    position: relative;
+}
+.alumni img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops the image */
+    object-position: center;
+}
+
+@media screen and (min-width:320px) and (max-width:456px){
+    nav{padding:10px; width:100%;position: sticky;top:5 0;height: 70px; justify-content: space-between;flex-wrap: wrap;}
+header>img{margin-left: 16%;width:50%;margin-bottom: 2%;}
+header{margin-top: 3%;display: block;}
+.content{width:90%;margin-left: 5%;margin-top: 40%;}
+.firstline{font-size:20px;font-weight: 100;}
+.secondline{font-size: 40px;}
+.content>p{margin: 0;}
+ .about_container{flex-direction: column;margin: 35% 5% 10% 5%;}
+ .about{order: 1;width: 90%;letter-spacing: 1px;font-stretch:extra-expanded;}
+ .about_container>video{order: 2;width: 100%;margin-top: 5%; margin-right: 10%;}
+ .Register_Campus_Payonline{display: block;margin:10% 3% 10% 3%;}
+.register,.pay,.campus{width:97%;margin-top: 20%;height: 40%;}
+.register>img,.pay>img,.campus>img{width: 100%;margin-top: 5%;}
+.educational_technology>a>ul{display: flex;border: 1px solid lightgray;list-style: none;width: 88%;gap: 25px;padding-top:50px ;padding-left:0px ;}
+.educational_technology_image{margin-left: 3%;margin-top: 5%;height: 65%;width: 100%;padding: 0;}
+.educational_technology>a>p{position: absolute;top:30%;left: 50%;font-size: 25px;padding: 5px;width: 100%;}
+.contacts{width: 150px;}.microsoft_showcase{visibility:hidden;}
+.banner{width: 94%;margin: 5% 0 2% 3%;}
+.network img{margin-left: 20%;}
+.alumni img{object-position: right;}
+.alumni{width: 390px;height: 300px;margin-bottom: 5%;margin-top: 10%;}
+.map{height: 24%;}
+.networkhidden{visibility: hidden;}
+.parentfooter{display: block;background-color: rgb(33, 33, 112);padding: 10px;height: 80%;width: 95%;}
+.logo>img{width: 180px;padding: 20px;}
+.footer,.location,.media_links p{line-height: 20px;color: white;}
+.affilations{color: rgb(10, 7, 7);border-top: 1px solid white;height: 20%;border-left: none;margin-left: -20%;}
+.affilations>ul>li>img{width: 180px;padding: 10px;}
+.affilations>ul{display: block;list-style: none;}
+.location p{width: 70%;line-height: 30px;}
+.media_links ul{margin-left: -9%;}
+.privacy{margin-left:-1%; }
+.privacychild>p,.privacychild>a{font-size: x-small;padding-top: 50px;}
+.parentprivacy{height:10%;margin-top: -1%;width: 100%;}}
